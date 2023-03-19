@@ -1,0 +1,16 @@
+button {
+  border: 1px solid #bbb;
+  background-color: transparent;
+  padding: 8px;
+  min-width: 400px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #bbb;
+}
