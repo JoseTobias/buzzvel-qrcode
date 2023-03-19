@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "./components/Button";
-import Input from "./components/Input";
+import Button from "../../components/Button";
+import Input from "../../components/Input";
 
-function App() {
+function GeneratePage() {
   return (
     <>
       <h1>QR Code Image Generator</h1>
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default GeneratePage;
