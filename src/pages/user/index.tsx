@@ -12,10 +12,10 @@ function UserPage() {
   const github = searchParams.get("github") || "";
   return (
     <div className="page">
-      <p>Hello, my name is {name}</p>
+      <h3>Hello, my name is {name}</h3>
       <div className="button-content">
-        <LinkButton href={linkedin}>LinkedIn</LinkButton>
-        <LinkButton href={github}>Github</LinkButton>
+        {linkedin && <LinkButton href={linkedin}>LinkedIn</LinkButton>}
+        {github && <LinkButton href={github}>Github</LinkButton>}
       </div>
     </div>
   );
