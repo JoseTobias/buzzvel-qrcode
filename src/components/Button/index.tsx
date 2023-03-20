@@ -1,10 +1,13 @@
 import React from "react";
 import "./styles.css";
 
-function Button() {
+function Button({
+  children,
+  ...rest
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <div>
-      <button>Generate Image</button>
+      <button {...rest}>{children}</button>
     </div>
   );
 }
