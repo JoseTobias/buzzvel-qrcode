@@ -13,10 +13,17 @@
   border-radius: 4px 0 0 4px;
 }
 
+@media only screen and (max-width: 767px) {
+  .input-label {
+    width: 200px;
+  }
+}
+
 input {
   border: none;
   outline: none;
   padding: 8px;
+  border-radius: 0 4px 4px 0;
 }
 
 .input-full-width {

@@ -1,0 +1,7 @@
+.button-content {
+  display: grid;
+  max-width: 400px;
+  grid-template-columns: auto auto;
+  grid-gap: 16px;
+  margin-top: 32px;
+}

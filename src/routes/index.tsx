@@ -9,7 +9,7 @@ function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="generate" element={<Generate />} />
-        <Route path=":disciplineId" element={<User />} />
+        <Route path=":name" element={<User />} />
         <Route path="*" element={<Generate />} />
       </Routes>
     </BrowserRouter>

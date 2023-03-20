@@ -45,7 +45,7 @@ function GeneratePage() {
       return;
     }
 
-    const makeUrl = `https://localhost:8000/${formData.name}?linkedin=${formData.linkedin}&github=${formData.github}`;
+    const makeUrl = `${process.env.REACT_APP_BASE_URL}/${formData.name}?linkedin=${formData.linkedin}&github=${formData.github}`;
     setErrorMessage("");
     setUrl(makeUrl);
   };
