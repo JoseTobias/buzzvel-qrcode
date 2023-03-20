@@ -4,3 +4,8 @@
   align-items: center;
   margin-top: 64px;
 }
+
+.error-message {
+  color: red;
+  margin: 16px 0 16px 0;
+}

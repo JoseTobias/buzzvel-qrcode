@@ -5,6 +5,7 @@ import "./styles.css";
 
 import Button from "../../components/Button";
 import Input from "../../components/Input";
+import { isURL } from "../../utils";
 
 interface FormState {
   name: string;
@@ -21,6 +22,7 @@ function GeneratePage() {
     linkedin: "",
   });
   const [url, setUrl] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChangeFormData = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -30,28 +32,21 @@ function GeneratePage() {
     setFormData((prevState) => ({ ...prevState, [label]: value }));
   };
 
-  function isURL(str: string) {
-    const urlRegex = /^(?:\w+:)?\/\/([^\s.]+\.\S{2}|localhost[:?\d]*)\S*$/;
-    return urlRegex.test(str);
-  }
-
   const handleGenerateCode = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (formData.name === "") {
-      console.log("invalid name");
+
+    if (!isURL(formData.linkedin)) {
+      setErrorMessage("invalid linkedin");
       return;
     }
 
     if (!isURL(formData.github)) {
-      console.log("invalid github");
+      setErrorMessage("invalid github");
       return;
     }
 
-    if (!isURL(formData.linkedin)) {
-      console.log("invalid linkedin");
-      return;
-    }
     const makeUrl = `https://localhost:8000/${formData.name}?linkedin=${formData.linkedin}&github=${formData.github}`;
+    setErrorMessage("");
     setUrl(makeUrl);
   };
 
@@ -83,6 +78,7 @@ function GeneratePage() {
             required
           />
         </div>
+        <p className="error-message">{errorMessage}</p>
         <Button type="submit">Generate Image</Button>
         {url && (
           <div className="qrcode-content">
