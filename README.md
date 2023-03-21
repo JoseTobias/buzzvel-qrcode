@@ -3,7 +3,7 @@
 This project was developed aiming the frontend position in Buzzvel, so you can see all requirements in the pdf of the follow link:
 [requirements](https://github.com/JoseTobias/buzzvel-qrcode/docs/requirements.pdf)
 
-# Dependencies
+## Dependencies
 
 First of all don't forget install the dependencies ruining the following command:
 `npm install`
@@ -23,6 +23,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `npm run test:coverage`
+
+Runs the coverage of the application, if you want to check the page follow the steps:
+
+- Run the coverage command
+- Go to `./coverage/lcov-report` and open the index file in your browser
+
+The coverage of this application is around 94%
 
 ### `npm test`
 

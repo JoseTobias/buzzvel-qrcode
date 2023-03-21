@@ -11,7 +11,7 @@ function Input({ label, id, ...rest }: InputProps) {
       <div className="input-label">
         <label htmlFor={id}>{label}</label>
       </div>
-      <input className="input-full-width" type="text" {...rest} />
+      <input className="input-full-width" type="text" {...rest} id={id} />
     </div>
   );
 }
