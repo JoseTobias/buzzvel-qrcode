@@ -1,7 +1,7 @@
 # Buzzvel Qr Code
 
 This project was developed aiming the frontend position in Buzzvel, so you can see all requirements in the pdf of the follow link:
-[requirements](https://github.com/JoseTobias/buzzvel-qrcode/docs/requirements.pdf)
+[requirements](/docs/requirements.pdf)
 
 ## Dependencies
 
