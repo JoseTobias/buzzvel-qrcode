@@ -3,6 +3,9 @@
 This project was developed aiming the frontend position in Buzzvel, so you can see all requirements in the pdf of the follow link:
 [requirements](/docs/requirements.pdf)
 
+Link to production website:
+[https://dazzling-qr-code.netlify.app](https://dazzling-qr-code.netlify.app)
+
 ## Dependencies
 
 First of all don't forget install the dependencies ruining the following command:
